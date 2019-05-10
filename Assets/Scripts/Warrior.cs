@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    class Circle : Shape
+    class Warrior : Class
     {
-        public float radius;
 
-        public Circle(string name, float radius) : base(name)
+
+        public Warrior(string name) : base(name)
         {
-            this.radius = radius;
+
         }
 
-        public override string Area() {
-            string area = "Cleric";
+        public override string Area()
+        {
+            string area = "Warrior";
             //Debug.Log(name + " @ " + radius + " @ " + area);
             return area;
         }

@@ -6,13 +6,13 @@ using UnityEngine;
 
 namespace Shapes
 {
-    class Square : Shape
+    class Knight : Class
     {
-        public float side;
+       
 
-        public Square(string name, float side) : base(name)
+        public Knight(string name) : base(name)
         {
-            this.side = side;
+           
         }
 
         public override string Area()

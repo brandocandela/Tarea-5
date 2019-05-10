@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    class Shape
+    class Class
     {
         protected string name;
         public string Name {
@@ -15,7 +15,7 @@ namespace Shapes
             }
         }
 
-        public Shape(string name) {
+        public Class(string name) {
             this.name = name;
         }
 

@@ -18,20 +18,24 @@ public class MyProgram : MonoBehaviour
         //Debug.Log("2 - circle");
         string shapeSelected = inputField.text;//Console.ReadLine();
 
-        Shape shape = null;
+        Class Class = null;
         switch (shapeSelected)
         {
             case "1":
-                shape = new Square("MySquare", 5);
+                Class = new Knight("NewKnight");
                 break;
 
             case "2":
-                shape = new Circle("MyCircle", 2);
+                Class = new Cleric("NewCleric");
+                break;
+
+            case "3":
+                Class = new Warrior("NewWarrior");
                 break;
         }
 
-        if (shape != null)
-            Debug.Log(shape.Area());
+        if (Class != null)
+            Debug.Log("Your selected " +Class.Area());
     }
 
 }
